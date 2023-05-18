@@ -11,9 +11,9 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
+  <body class="flex flex-col h-screen w-screen justify-between">
       <%= yield :navbar%>
-    <main class="container mx-auto mt-28 px-5 flex">
+    <main class=" mx-auto w-screen">
       <%= yield %>
     </main>
   </body>
