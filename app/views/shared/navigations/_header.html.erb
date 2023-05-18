@@ -1,15 +1,16 @@
 <%= provide :navbar do %>
     <nav class="bg-white border-gray-200 dark:bg-gray-900">
-        <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
+        <div class="flex flex-wrap justify-between items-center mx-auto lg:max-w-screen-xl p-4">
             <%= link_to root_path, class: 'grid grid-rows-2 grid-flow-col' do %>
                 <span class="self-center text-4xl font-semibold whitespace-nowrap dark:text-white">Malakutsko</span>
                 <span class="self-center text-sm font-semibold whitespace-nowrap dark:text-white">Медицинский массажист</span>
             <% end %>
-            <div class="flex items-center space-x-4">
+            <div class="flex items-center justify-between space-x-4 w-full lg:w-auto">
                 <span class="flex items center text-gray-100 text-xl">
                     <%= heroicon 'map-pin', class: 'w-6 h-6 mr-1'%>
                     Турция, г. Алания
                 </span>
+                <%= render 'shared/locales'%>
                 <!-- <button type="button" class="text-white bg-gradient-to-r from-blue-700 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-md hover:shadow-lg hover:shadow-blue-500/50 shadow-blue-500/50 dark:shadow-md dark:shadow-blue-800/80 dark:hover:shadow-blue-800/80 font-medium rounded-lg text-sm px-4 py-2 text-center flex items-center">
                     <%= heroicon 'pencil-square', class: 'w-5 h-5 mr-1'%>
                     Запись на прием
@@ -24,7 +25,7 @@
     <nav class="bg-gray-50 dark:bg-gray-700">
         <div class="max-w-screen-xl px-4 py-3 mx-auto">
             <div class="flex items-center">
-                <ul class="flex flex-row font-medium mt-0 mr-6 space-x-8 text-sm">
+                <ul class="flex flex-row font-medium mt-0 mr-6 space-x-3 lg:space-x-8 text-sm">
                     <%= render 'shared/navigations/content_links_list', 
                         link_class: " hover:underline", 
                         current_page: current_page
