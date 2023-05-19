@@ -30,6 +30,11 @@ module Malakutsko
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+    config.time_zone = 'Europe/Kiev'
+
+    # I18n
+    config.i18n.available_locales = %i[uk ru en]
+    config.i18n.default_locale = :uk
 
     # Don't generate system test files.
     config.generators.system_tests = nil
