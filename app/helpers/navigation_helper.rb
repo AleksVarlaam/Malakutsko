@@ -17,7 +17,7 @@ module NavigationHelper
 
   def currently_at(current_page = '')
     render partial: 'shared/navigations/header', locals: { current_page: }
-    # render partial: 'shared/navigations/footer', locals: { current_page: }
+    render partial: 'shared/navigations/footer', locals: { current_page: }
   end
 
   def full_title(page_title = '')

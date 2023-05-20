@@ -1,0 +1,19 @@
+<%= provide :footer do %>
+<footer class="dark:bg-gray-800 dark:text-gray-50 divide-y ">
+	<div class="container flex flex-col p-4 mx-auto md:p-8 lg:flex-row divide-gray-400">
+		<ul class="self-center py-6 space-y-4 text-center sm:flex sm:space-y-0 sm:justify-around sm:space-x-4 lg:flex-1 lg:justify-start">
+            <%= render 'shared/navigations/content_links_list', 
+                link_class: " hover:underline", 
+                current_page: current_page
+            %>
+		</ul>
+        <!-- Social links -->
+		<div class="flex flex-col justify-center pt-6 lg:pt-0">
+            <ul class="flex items-center font-medium mt-0 sm:mr-6 space-x-5 lg:space-x-8 text-sm justify-center sm:justify-end">
+                <%= render 'shared/navigations/social_links'%>
+            </ul>
+		</div>
+	</div>
+    <div class="py-6 text-sm text-center dark:text-gray-400">© Copyright <%= Time.now.strftime('%Y')%>. All Rights Reserved.</div>
+</footer>
+<% end %>

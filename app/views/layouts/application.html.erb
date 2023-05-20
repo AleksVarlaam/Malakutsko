@@ -12,9 +12,10 @@
   </head>
 
   <body class="flex flex-col h-screen w-screen justify-between">
-      <%= yield :navbar%>
+    <%= yield :navbar%>
     <main class=" mx-auto w-screen">
       <%= yield %>
     </main>
+    <%= yield :footer%>
   </body>
 </html>
