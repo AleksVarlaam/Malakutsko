@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="scroll-smooth">
   <head>
     <title>Malakutsko</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -12,10 +12,13 @@
   </head>
 
   <body class="flex flex-col h-screen w-screen justify-between">
-    <%= yield :navbar%>
-    <main class=" mx-auto w-screen">
-      <%= yield %>
-    </main>
-    <%= yield :footer%>
+        <!-- Navbar -->
+        <%= yield :navbar%>
+        <!-- Content -->
+        <main class=" mx-auto w-screen">
+            <%= yield %>
+        </main>
+        <!-- Footer -->
+        <%= yield :footer%>
   </body>
 </html>

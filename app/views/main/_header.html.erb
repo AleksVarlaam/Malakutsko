@@ -28,7 +28,7 @@
         </div>
     </div>
     <div class="flex justify-center">
-        <%= link_to '#' do%>
+        <%= link_to '#top_features', data: {controller: 'scroll-to', 'scroll-to-offset-value' => "0"} do %>
             <%= heroicon 'chevron-double-down', 
                 class: 'w-7 h-7 rounded-full dark:text-gray-400 dark:hover:text-gray-200 dark:hover:shadow-lg dark:hover:shadow-gray-500/50'%>
         <% end %>
