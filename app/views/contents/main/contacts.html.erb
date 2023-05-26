@@ -1,0 +1,90 @@
+<% currently_at 'Контакты' %>
+<% provide :page_title, 'Контакты' %>
+
+
+<section class="min-h-screen bg-gradient-to-r from-blue-600 via-blue-800 to-blue-900 dark:from-gray-800 dark:via-gray-800 dark:to-gray-900 ">
+    <div class="container flex flex-col min-h-screen px-6 py-12 mx-auto">
+        <div class="flex-1 lg:flex lg:items-center lg:-mx-6">
+            <div class="text-white lg:w-1/2 lg:mx-6">
+                <h1 class="text-2xl font-semibold lg:text-3xl">Всегда с вами на связи</h1>
+
+                <p class="max-w-xl mt-6">Опишите свою проблему и я свяжусь с вами в ближайшее время</p>
+
+                <div class="mt-6 space-y-8 md:mt-8">
+                    <!-- Location -->
+                    <p class="flex items-center space-x-5">
+                        <%= heroicon 'map-pin', class: 'w-6 h-6'%>
+                        <span class="text-white truncate w-auto hover:underline">
+                            Турция, г. Аланья
+                        </span>
+                    </p>
+                    <!-- Phone -->
+                    <%= link_to 'tel:+972 53-308-2011', class: "flex items-center text-white space-x-5" do %>
+                        <%= heroicon 'phone-arrow-down-left', class: 'w-5 h-5'%>
+                        <span class="text-white truncate w-auto hover:underline">+972 53-308-2011</span>
+                    <% end %>
+                    <!-- WhatsApp -->
+                    <%= link_to 'https://wa.me/972533082011', class: "flex items-center text-white space-x-5" do %>
+                        <i class="fa-brands fa-whatsapp fa-lg"></i>
+                        <span class="text-white truncate w-auto hover:underline">+972 53-308-2011</span>
+                    <% end %>
+                    <!-- Telegram -->
+                    <%= link_to 'https://t.me/Vladimir_massage', class: "flex items-center text-white space-x-5" do %>
+                        <i class="fa-brands fa-telegram fa-lg"></i>
+                        <span class="text-white truncate w-auto hover:underline">@Vladimir_massage</span>
+                    <% end %>
+                </div>
+
+                <div class="mt-6 md:mt-8">
+                    <h3 class="text-gray-300 ">Подписывайтесь на меня</h3>
+
+                    <div class="flex mt-4 space-x-3">
+                        <!-- Instagram -->
+                        <%= link_to 'https://www.instagram.com/massage_from_israel/?r=nametag', 
+                            class: "rounded-full hover:shadow-lg hover:shadow-gray-200 text-white" do %>
+                            <i class="fa-brands fa-instagram fa-2xl"></i>
+                        <% end %>
+                        <!-- Facebook -->
+                        <%= link_to 'https://www.facebook.com/Vladimir.Malakutsko', 
+                            class: "rounded-full hover:shadow-lg hover:shadow-gray-200 text-white" do %>
+                            <i class="fa-brands fa-facebook fa-2xl"></i>
+                        <% end %>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-8 lg:w-1/2 lg:mx-6">
+                <div class="w-full px-8 py-10 mx-auto overflow-hidden bg-white shadow-2xl rounded-xl dark:bg-gray-900 lg:max-w-xl">
+                    <h1 class="text-xl font-medium text-gray-700 dark:text-gray-200">Контактная форма</h1>
+
+                    <form class="mt-4 space-y-6">
+                        <div class="flex-1">
+                            <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Полное имя</label>
+                            <input type="text" placeholder="John Doe" class="block w-full px-5 py-3 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring" />
+                        </div>
+                        
+                        <div class="flex-1">
+                            <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Номер телефона</label>
+                            <input type="text" placeholder="Номер телефона" class="block w-full px-5 py-3 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring" />
+                        </div>
+
+                        <div class="flex-1">
+                            <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Email адрес</label>
+                            <input type="email" placeholder="johndoe@example.com" class="block w-full px-5 py-3 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring" />
+                        </div>
+
+                        <div class="w-full">
+                            <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Сообщение</label>
+                            <textarea class="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-48 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring" placeholder="Ваше сообщение"></textarea>
+                        </div>
+
+                        <button type="button" 
+                            class="w-full text-sm px-6 py-3 text-white bg-gradient-to-r from-blue-700 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-md hover:shadow-lg hover:shadow-blue-500/50 shadow-blue-500/50 dark:shadow-md dark:shadow-blue-800/80 dark:hover:shadow-blue-800/80 font-medium rounded-lg text-center flex items-center justify-center">
+                            Отправить
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

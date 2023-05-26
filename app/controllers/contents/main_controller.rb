@@ -5,5 +5,8 @@ module Contents
     
     def about
     end
+    
+    def contacts
+    end
   end
 end
